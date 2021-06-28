@@ -118,7 +118,7 @@
 	      See the requirement to support a keyboard interface specified in WCAG 2.1 [[WCAG21]], success criterion 2.1.1.</p>
 
 	      <ul>
-		<li><strong>User Need 4:</strong> Different users have a need for different output devices or mechanisms. For example, a user who is blind may require speech output. A user who is deaf or who has a speech disability may require visually displayed text output. A user who is deaf-blind may require braille output.</li>
+		<li id="need4"><strong>User Need 4:</strong> Different users have a need for different output devices or mechanisms. For example, a user who is blind may require speech output. A user who is deaf or who has a speech disability may require visually displayed text output. A user who is deaf-blind may require braille output.</li>
 		<li><strong>REQ 4:</strong> Support multiple output devices and methods.</li>
 	      </ul>
 		<p class="note">
@@ -127,7 +127,7 @@
 		If software that incorporates a natural language interface supports multiple output mechanisms, support for any specific mechanism may be available only on particular hardware devices or in particular environments. For example, a smart speaker supports only speech output, whereas the same smart agent running on a mobile system such as a phone or tablet may support a visual display as well, and may be compatible with braille devices.</p>
 
 		<ul>
-		  <li><strong>User Need 5:</strong> A user needs to use the same input and output mechanisms to complete an entire task involving an interaction with the system.</li>
+		  <li id="need5"><strong>User Need 5:</strong> A user needs to use the same input and output mechanisms to complete an entire task involving an interaction with the system.</li>
 		  <li><strong>REQ 5:</strong>Provide a mode of operation in which the user does not need to switch from one input or output mechanism to another partway through completing an interactive task.</li>
 		</ul>
 		<aside class="example">
@@ -299,6 +299,22 @@ Commands for performing a variety of functions typically supported by speech int
 		  </ul>
 		  <p class="note">
 		  See WCAG 2.1 [[WCAG21]], success criterion 3.3.6.</p>
+		</section>
+		<section>
+		  <h4>Using Multimodal Interfaces to Enhance Understanding</h4>
+		  <ul>
+		    <li><strong>User Need 26:</strong>Some users with learning disabilities need textual information to be spoken and presented in written form simultaneously.</li>
+		    <li><strong>REQ 26:</strong> Provide a mode of operation in which textual information is spoken and presented on screen concurrently, with synchronized visual highlighting of the text as it is spoken.</li>
+		  </ul>
+		  <p class="note">The purpose of this multimodal presentation of text is to enhance comprehension of the material, especially by people with learning disabilities that affect reading.</p>
+		  <ul>
+		    <li><strong>User Need 27:</strong> Some users with learning or cognitive disabilities need graphical content that complements and reinforces the meaning of textual information.</li>
+		    <li><strong>REQ 27:</strong>If appropriate graphical conventions exist for presenting information that is provided to the user, then display a graphical presentation in addition to any textual (e.g., spoken) output.</li>
+		  </ul>
+		  <p class="note">Information presented graphically must also be available as text. See <a href="#need4">User Need 4</a> and <a href="#need5">User Need 5</a> above.</p>
+		  <aside class="example">
+		    <p>A user asks a smart agent for travel directions to reach a desired destination. The agent displays the requested directions on a map by highlighting the route, in addition to providing spoken, step-by-step navigation instructions.</p>
+		  </aside>
 		</section>
 	      </section>
 	      </section>
